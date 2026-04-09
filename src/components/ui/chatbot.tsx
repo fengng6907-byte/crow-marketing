@@ -41,7 +41,9 @@ export function Chatbot() {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          message: messageText,
+          action: "sendMessage",
+          sessionId: "crow-user123",
+          chatInput: messageText,
         }),
       });
 
